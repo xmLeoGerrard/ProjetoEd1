@@ -1,3 +1,4 @@
+# Leonardo Gerrard - Ciência da Computação UEL
 # ── Makefile do Projeto TED ────────────────────────────────────────
 PROJ_NAME = ted
 ALUNO     = Leonardo Gerrard
