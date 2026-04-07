@@ -4,7 +4,7 @@ PROJ_NAME = ted
 ALUNO     = Leonardo Gerrard
 
 CC      = gcc
-CFLAGS  = -std=c99 -fstack-protector-all -ggdb -O0 -Wall -Wextra \
+CFLAGS  = -std=c99 -fstack-protector-all -ggdb -O0 -Wall -Wextra -Wextra \
           -Werror=implicit-function-declaration \
           -Isrc -Iunity
 LDFLAGS = -O0 -lm
