@@ -1,0 +1,9 @@
+p 111.111.111-11 Joao Silva M 15/03/1985
+p 222.222.222-22 Maria Souza F 20/07/1990
+p 333.333.333-33 Pedro Costa M 01/01/1978
+p 444.444.444-44 Ana Lima F 30/11/2000
+p 555.555.555-55 Carlos Melo M 12/06/1965
+m 111.111.111-11 cep01 N 10 apto1
+m 222.222.222-22 cep01 S 25 casa
+m 333.333.333-33 cep02 L 5 fund
+m 444.444.444-44 cep01 N 50 cobertura

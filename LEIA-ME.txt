@@ -1,0 +1,86 @@
+=======================================================
+  Estrutura de Dados II - 2026
+=======================================================
+
+ALUNO: Leonardo Gerrard de Araujo Riberio 
+
+-------------------------------------------------------
+COMPILAÇÃO
+-------------------------------------------------------
+  make ted        → compila o executável src/ted
+  make tstall     → compila e executa todos os testes
+  make clean      → remove objetos e executáveis
+
+-------------------------------------------------------
+TESTE RÁPIDO (arquivos de exemplo incluídos)
+-------------------------------------------------------
+  mkdir -p /tmp/saida
+  ./src/ted -e tst/samples -f exemplo.geo \
+            -pm exemplo.pm -q exemplo.qry \
+            -o /tmp/saida
+  cat /tmp/saida/exemplo-exemplo.txt
+  cat /tmp/saida/exemplo_quadras.hfd
+
+-------------------------------------------------------
+EXECUÇÃO GERAL
+-------------------------------------------------------
+  ./src/ted [-e path] -f arq.geo [-pm arq.pm] [-q arq.qry] -o dir
+
+  Parâmetros:
+    -e path      Diretório base de entrada (padrão: .)
+    -f arq.geo   Arquivo da cidade (obrigatório)
+    -pm arq.pm   Arquivo de pessoas e moradores
+    -q arq.qry   Arquivo de consultas
+    -o dir       Diretório de saída (obrigatório)
+
+-------------------------------------------------------
+MÓDULOS
+-------------------------------------------------------
+  hashfile.c/h   Hashfile Dinâmico Extensível em disco
+                 - Diretório global (extendible hashing)
+                 - Buckets com profundidade local
+                 - Split automático de bucket cheio
+                 - Duplicação de diretório
+                 - Overflow encadeado como fallback
+                 - Persistência total em .hf binário
+                 - Dump legível em .hfd
+
+  quadra.c/h     Entidade Quadra (CEP, coords, cores)
+  pessoa.c/h     Entidade Pessoa/Morador (CPF, endereço)
+  cidade.c/h     Consultas: rq, pq, censo, nasc, rip, mud, dspj
+  parser.c/h     Leitura de .geo, .pm e .qry
+  svg.c/h        Geração de saída SVG
+  args.c/h       Tratamento de argumentos CLI
+  ted.c          Programa principal
+
+-------------------------------------------------------
+TESTES UNITÁRIOS (Unity Framework - offline stub)
+-------------------------------------------------------
+  tst/t_hashfile.c  24 testes do hashfile dinâmico
+  tst/t_quadra.c     8 testes de quadra
+  tst/t_pessoa.c     7 testes de pessoa
+  tst/t_args.c       8 testes de args
+  tst/t_cidade.c     9 testes de consultas
+
+  Total: 56 testes, 0 falhas
+
+-------------------------------------------------------
+SAÍDAS PRODUZIDAS
+-------------------------------------------------------
+  <stem>.svg              Mapa base (apenas .geo)
+  <stem>-<qry>.svg        Mapa com marcações das consultas
+  <stem>-<qry>.txt        Resultados textuais das consultas
+  <stem>_quadras.hf       Hashfile binário das quadras
+  <stem>_quadras.hfd      Dump legível do hashfile de quadras
+  <stem>_pessoas.hf       Hashfile binário das pessoas
+  <stem>_pessoas.hfd      Dump legível do hashfile de pessoas
+
+-------------------------------------------------------
+ESTRUTURA DO REPOSITÓRIO
+-------------------------------------------------------
+  /src          Arquivos fonte (.c e .h)
+  /tst          Testes unitários e amostras de entrada
+  /tst/samples  Arquivos .geo/.pm/.qry de exemplo
+  /unity        Framework Unity (stub offline compatível)
+  makefile
+  LEIA-ME.txt
