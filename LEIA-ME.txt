@@ -84,3 +84,4 @@ ESTRUTURA DO REPOSITÓRIO
   /unity        Framework Unity (stub offline compatível)
   makefile
   LEIA-ME.txt
+Status: Em desenvolvimento
