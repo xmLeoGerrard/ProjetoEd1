@@ -125,3 +125,4 @@ int main(int argc, char *argv[]) {
     printf("TED concluido. Saida em: %s\n", args.base_saida);
     return 0;
 }
+// Cleanup: legacy functions removed
