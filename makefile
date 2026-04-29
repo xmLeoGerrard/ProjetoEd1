@@ -1,6 +1,6 @@
 # ── Makefile do Projeto TED ────────────────────────────────────────
 PROJ_NAME = ted
-ALUNO     =
+ALUNO     = Leonardo Gerrard
 
 CC      = gcc
 CFLAGS  = -std=c99 -fstack-protector-all -ggdb -O0 -Wall -Wextra \
