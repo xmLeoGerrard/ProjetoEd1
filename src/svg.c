@@ -110,3 +110,4 @@ void svg_face_count(SvgFile f, float x, float y, int count,
     snprintf(buf, sizeof(buf), "%d", count);
     svg_text(f, x, y, buf, fill ? fill : "black", 6.0f);
 }
+

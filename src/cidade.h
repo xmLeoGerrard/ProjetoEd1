@@ -66,3 +66,4 @@ void cidade_mud(CidadeCtx *ctx, const char *cpf,
 void cidade_dspj(CidadeCtx *ctx, const char *cpf, SvgFile svg, FILE *txt);
 
 #endif /* CIDADE_H */
+

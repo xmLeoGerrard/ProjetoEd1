@@ -191,3 +191,4 @@ void parse_qry(const char *filepath, HashFile hf_quadras,
     }
     fclose(f);
 }
+

@@ -40,3 +40,4 @@ void quadra_face_pos(const Quadra *q, char face, float *ox, float *oy);
 void quadra_anchor(const Quadra *q, float *ax, float *ay);
 
 #endif /* QUADRA_H */
+

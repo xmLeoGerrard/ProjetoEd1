@@ -42,3 +42,4 @@ void svg_face_count(SvgFile f, float x, float y, int count,
                     const char *fill);
 
 #endif /* SVG_H */
+

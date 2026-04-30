@@ -49,3 +49,4 @@ void quadra_face_pos(const Quadra *q, char face, float *ox, float *oy) {
     default:  *ox = cx;           *oy = cy;                break;
     }
 }
+

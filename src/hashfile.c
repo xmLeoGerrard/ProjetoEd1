@@ -502,3 +502,4 @@ int hf_count(HashFile hf) {
     assert(hf);
     return hf->hdr.total_records;
 }
+

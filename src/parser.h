@@ -39,3 +39,4 @@ void parse_qry(const char *filepath, HashFile hf_quadras,
                FILE *txt_out, CidadeCtx *cidade);
 
 #endif /* PARSER_H */
+

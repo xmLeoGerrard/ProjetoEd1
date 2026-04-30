@@ -45,3 +45,4 @@ int pessoa_is_morador(const Pessoa *p);
 void pessoa_fmt_endereco(const Pessoa *p, char *buf, int buflen);
 
 #endif /* PESSOA_H */
+

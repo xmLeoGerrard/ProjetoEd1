@@ -316,3 +316,4 @@ void cidade_dspj(CidadeCtx *ctx, const char *cpf, SvgFile svg, FILE *txt) {
     pessoa_serialize(&p, ser, sizeof(ser));
     hf_update(ctx->hf_pessoas, cpf, ser);
 }
+

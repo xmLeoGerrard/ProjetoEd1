@@ -72,3 +72,4 @@ void args_basename(const char *filepath, char *dest, int dest_len) {
     char *dot = strrchr(dest, '.');
     if (dot) *dot = '\0';
 }
+

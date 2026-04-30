@@ -55,3 +55,4 @@ void pessoa_fmt_endereco(const Pessoa *p, char *buf, int buflen) {
                  p->end.cep, p->end.face, p->end.num, p->end.compl);
     }
 }
+

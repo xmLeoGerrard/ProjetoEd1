@@ -119,3 +119,4 @@ int hf_count(HashFile hf);
 void hf_dump(HashFile hf, const char *hfd_path);
 
 #endif /* HASHFILE_H */
+

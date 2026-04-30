@@ -38,3 +38,4 @@ void args_build_path(const char *base_dir, const char *filename,
 void args_basename(const char *filepath, char *dest, int dest_len);
 
 #endif /* ARGS_H */
+
