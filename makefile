@@ -130,3 +130,6 @@ clean:
 	rm -f tst/t_hashfile tst/t_quadra tst/t_pessoa tst/t_args tst/t_cidade
 
 .PHONY: tstall tst_hashfile tst_quadra tst_pessoa tst_args tst_cidade clean
+
+help:
+	@echo 'Build the project with make'
