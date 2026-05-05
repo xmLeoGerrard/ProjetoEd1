@@ -1,0 +1,12 @@
+src/ted
+src/*.o
+tst/t_hashfile
+tst/t_quadra
+tst/t_pessoa
+tst/t_args
+tst/t_cidade
+tst/*.o
+unity/*.o
+*.hf
+*.hfd
+/tmp/
