@@ -128,3 +128,4 @@ int main(int argc, char *argv[]) {
 
 
 // Vallions NOC style: otimizando fluxo principal
+// Versao final entregue em 04/05/2026.
