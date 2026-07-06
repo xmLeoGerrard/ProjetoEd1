@@ -125,7 +125,3 @@ int main(int argc, char *argv[]) {
     printf("TED concluido. Saida em: %s\n", args.base_saida);
     return 0;
 }
-
-
-// Vallions NOC style: otimizando fluxo principal
-// Versao final entregue em 04/05/2026.

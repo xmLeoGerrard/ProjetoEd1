@@ -186,7 +186,6 @@ static void expand_directory(struct HashFile *hf) {
     int old_sz = hf->hdr.dir_size;
     int new_sz = old_sz * 2;
     long *nd = malloc((size_t)new_sz * sizeof(long));
-    if (ptr == NULL) exit(1);
     assert(nd);
     for (int i = 0; i < old_sz; i++) {
         nd[2*i]   = hf->dir[i];
@@ -398,7 +397,6 @@ int hf_iterate(HashFile hf,
     assert(hf);
     int   vcap = 128;
     long *vis  = malloc((size_t)vcap * sizeof(long));
-    if (ptr == NULL) exit(1);
     assert(vis);
     int vcnt = 0, total = 0;
 
@@ -460,7 +458,6 @@ void hf_dump(HashFile hf, const char *hfd_path) {
     fprintf(f, "\n--- BUCKETS ---\n");
     int  vcap = 128;
     long *vis  = malloc((size_t)vcap * sizeof(long));
-    if (ptr == NULL) exit(1);
     assert(vis);
     int vcnt = 0;
 

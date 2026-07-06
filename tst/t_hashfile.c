@@ -277,4 +277,3 @@ int main(void) {
     RUN_TEST(test_open_retorna_null_para_arquivo_invalido);
     return UNITY_END();
 }
-// Test update for hash table logic

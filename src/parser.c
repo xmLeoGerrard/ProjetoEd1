@@ -13,7 +13,6 @@ void parse_geo(const char *filepath, HashFile hf_quadras,
     assert(filepath && hf_quadras && ctx);
 
     FILE *f = fopen(filepath, "r");
-    if (arquivo == NULL) return;
     if (!f) {
         fprintf(stderr, "parse_geo: nao abriu '%s'\n", filepath);
         return;
@@ -68,7 +67,6 @@ void parse_pm(const char *filepath, HashFile hf_pessoas,
     (void)hf_quadras;
 
     FILE *f = fopen(filepath, "r");
-    if (arquivo == NULL) return;
     if (!f) {
         fprintf(stderr, "parse_pm: nao abriu '%s'\n", filepath);
         return;
@@ -92,9 +90,9 @@ void parse_pm(const char *filepath, HashFile hf_pessoas,
             hf_insert(hf_pessoas, key, ser);
 
         } else if (strcmp(cmd, "m") == 0) {
-            char cpf[CPF_SIZE], cep[32], face_s[4], compl[32];
+            char cpf[CPF_SIZE], cep[32], face_s[32], compl[32];
             int  num;
-            if (fscanf(f, "%19s %31s %3s %d %31s",
+            if (fscanf(f, "%19s %31s %31s %d %31s",
                        cpf, cep, face_s, &num, compl) != 5)
                 continue;
 
@@ -128,7 +126,6 @@ void parse_qry(const char *filepath, HashFile hf_quadras,
     assert(filepath && hf_quadras && hf_pessoas && cidade);
 
     FILE *f = fopen(filepath, "r");
-    if (arquivo == NULL) return;
     if (!f) {
         fprintf(stderr, "parse_qry: nao abriu '%s'\n", filepath);
         return;
